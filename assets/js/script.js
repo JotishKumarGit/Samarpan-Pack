@@ -11,7 +11,7 @@
     var phone = document.getElementById("phone").value.trim();
     var message = document.getElementById("message").value.trim();
 
-    var whatsappNumber = "919626107779";
+    var whatsappNumber = "919099266360";
 
     var url = "https://wa.me/" + whatsappNumber +
       "?text=" + encodeURIComponent(
