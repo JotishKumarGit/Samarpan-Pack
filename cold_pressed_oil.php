@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Samarpan Pack - About Us</title>
+    <title>Samarpan Pack - COld Pressed Oil </title>
     <!-- bootstrap icnos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -33,6 +33,7 @@
         }
     </style>
 
+    <!-- page-header -->
     <style>
         .page-header {
             position: relative;
@@ -107,6 +108,44 @@
         }
     </style>
 
+    <!-- products  -->
+    <style>
+        .product-image {
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            height: auto;
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        .product-section {
+            padding: 60px 0;
+        }
+
+        .product-details h2 {
+            font-weight: 700;
+        }
+
+        .product-details ul {
+            padding-left: 1.2rem;
+        }
+
+        .product-details li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .btn-enquiry {
+            padding: 10px 25px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -117,60 +156,44 @@
     <!-- Page Header Section -->
     <section class="page-header">
         <div class="container">
-            <h1>Welcome To Our About Us</h1>
+            <h1>Cold Pressed Oil</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Features</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    <li class="breadcrumb-item"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cold Pressed Oil</li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <!-- About Content -->
-    <div class="container-fluid about-wrapper">
+
+    <!-- Product Details Section -->
+    <div class="container-fluid bg-light product-section" id="product-cold-pressed-oil">
         <div class="container">
-            <!-- About Section -->
-            <div class="about-heading text-center pt-4" data-aos="fade-up">
-                <h2>About Samarpan Pack</h2>
-                <p>
-                    At <strong>Samarpan Pack</strong>, we are committed to delivering sustainable and high-quality products that support both everyday convenience and healthy living. Our offerings include eco-friendly <strong>paper cups</strong> and 100% natural <strong>cold pressed oils</strong>—crafted with care to serve your lifestyle and the environment.
-                </p>
-            </div>
-
-            <section class="about-section py-5">
-                <div class="row align-items-center">
-
-                    <!-- Left Image -->
-                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
-                        <div class="about-img">
-                            <img src="assets/images/Cold-Pressed-Oil.webp" alt="Samarpan Pack Products" class="img-fluid" />
-                        </div>
-                    </div>
-
-                    <!-- Right Text -->
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
-                        <div class="about-text">
-                            <h2>Who We Are</h2>
-                            <p>
-                                <strong>Samarpan Pack</strong> is a forward-thinking company focused on promoting eco-conscious choices and natural wellness. Our product line is divided into two key categories:
-                            </p>
-
-                            <ul>
-                                <li><strong>Paper Cups:</strong> Designed for durability and sustainability, our biodegradable paper cups are perfect for hot and cold beverages. Ideal for cafes, events, and everyday use.</li>
-                                <li><strong>Cold Pressed Oils:</strong> Extracted using traditional wooden churners, our oils retain nutrients, flavor, and aroma—ensuring purity and health benefits in every drop.</li>
-                            </ul>
-
-                            <p>
-                                Every product we offer reflects our dedication to quality, sustainability, and customer well-being.
-                            </p>
-                            <a href="contact.php" class="btn btn-primary">Connect With Us</a>
-                        </div>
-                    </div>
-
+            <div class="row align-items-center">
+                <!-- Product Image -->
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                    <img src="assets/images/Cold-Pressed-Oil.webp" alt="Cold Pressed Oil" class="product-image">
                 </div>
-            </section>
+
+                <!-- Product Content -->
+                <div class="col-md-6 product-details" data-aos="fade-left">
+                    <h2>Cold Pressed Oil</h2>
+                    <p>Experience the richness of <strong>pure, cold-pressed oil</strong>, extracted using traditional methods to retain its natural aroma, flavor, and nutrients. A healthier alternative for everyday cooking and skincare.</p>
+
+                    <ul>
+                        <li>100% natural & chemical-free extraction</li>
+                        <li>Rich in essential fatty acids and antioxidants</li>
+                        <li>Boosts heart health and improves digestion</li>
+                        <li>Great for oil pulling, massages, and hair care</li>
+                    </ul>
+
+                    <button class="btn btn-primary btn-enquiry mt-3" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                        Enquiry Now
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 

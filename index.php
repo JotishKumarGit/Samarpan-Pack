@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samarpan Pack</title>
+  <!-- bootstrap icnos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .product-img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #0dcaf0 !important;
+      /* Bootstrap info color */
+      transition: 0.3s ease;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- header -->
+ <?php include('header.php') ?>
+
+  <!-- carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/baner_1.jpg" style="height:600px; width: auto;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/baner_2.jpg" style="height:600px; width: auto;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/baner_3.webp" style="height:600px; width: auto;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/coconuts_oil.webp" style="height:600px; width: auto;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/roasted-coconut-oil.jpg" style="height:600px; width: auto;" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- About Content -->
+  <div class="container-fluid about-wrapper">
+    <div class="container">
+      <!-- About Section -->
+      <div class="about-heading text-center pt-4" data-aos="fade-up">
+        <h2>About Samarpan Pack</h2>
+        <p>
+          At <strong>Samarpan Pack</strong>, we are committed to delivering sustainable and high-quality products that support both everyday convenience and healthy living. Our offerings include eco-friendly <strong>paper cups</strong> and 100% natural <strong>cold pressed oils</strong>—crafted with care to serve your lifestyle and the environment.
+        </p>
+      </div>
+
+      <section class="about-section py-5">
+        <div class="row align-items-center">
+
+          <!-- Left Image -->
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="about-img">
+              <img src="assets/images/Cold-Pressed-Oil.webp" alt="Samarpan Pack Products" class="img-fluid" />
+            </div>
+          </div>
+
+          <!-- Right Text -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
+            <div class="about-text">
+              <h2>Who We Are</h2>
+              <p>
+                <strong>Samarpan Pack</strong> is a forward-thinking company focused on promoting eco-conscious choices and natural wellness. Our product line is divided into two key categories:
+              </p>
+
+              <ul>
+                <li><strong>Paper Cups:</strong> Designed for durability and sustainability, our biodegradable paper cups are perfect for hot and cold beverages. Ideal for cafes, events, and everyday use.</li>
+                <li><strong>Cold Pressed Oils:</strong> Extracted using traditional wooden churners, our oils retain nutrients, flavor, and aroma—ensuring purity and health benefits in every drop.</li>
+              </ul>
+
+              <p>
+                Every product we offer reflects our dedication to quality, sustainability, and customer well-being.
+              </p>
+              <a href="contact.php" class="btn btn-primary">Connect With Us</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Our Products Section -->
+  <div class="container-fluid py-5">
+    <div class="container text-center">
+      <h2 class="mb-4" data-aos="fade-up">Our Products</h2>
+      <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        Discover everyday essentials designed for better living. From eco-friendly <strong>Paper Cups</strong> to nutrient-rich <strong>Cold Pressed Oil</strong>, our products bring sustainability and purity to your lifestyle.
+      </p>
+      <div class="row justify-content-center g-4">
+
+        <!-- Product 1: Paper Cups -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/Paper-Cups.jpg" class="card-img-top product-img" alt="Paper Cups">
+            <div class="card-body text-center">
+              <h5 class="card-title">Paper Cups</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn btn-outline-primary">Enquiry</a>
+                <a href="paper_cup.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Cold Pressed Oil -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/Cold-Pressed-Oil.webp" class="card-img-top product-img" alt="Cold Pressed Oil">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cold Pressed Oil</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn btn-outline-primary">Enquiry</a>
+                <a href="cold_pressed_oil.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3:Sun flower oil -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/Sunflower_oil.jpg" class="card-img-top product-img" alt="Cold Pressed Oil">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sun Flower Oil</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn btn-outline-primary">Enquiry</a>
+                <a href="sun_flower_oil.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Palmolein Oil -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/Cold-Pressed-Oil.webp" class="card-img-top product-img" alt="Cold Pressed Oil">
+            <div class="card-body text-center">
+              <h5 class="card-title">Palmolein Oil</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn btn-outline-primary">Enquiry</a>
+                <a href="palmolein_oil.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Mustard oil -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/Mustard_oil.jpg" class="card-img-top product-img" alt="Cold Pressed Oil">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mustard Oil</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn btn-outline-primary">Enquiry</a>
+                <a href="mustard_oil.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: cotton oil -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/cotton-oil.webp" class="card-img-top product-img" alt="Cold Pressed Oil">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cotton Oil</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal"  class="btn btn-outline-primary">Enquiry</a>
+                <a href="cotton_oil.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Coconut oil -->
+        <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow border-0">
+            <img src="assets/images/Coconut_oil.jpg" class="card-img-top product-img" alt="Cold Pressed Oil">
+            <div class="card-body text-center">
+              <h5 class="card-title">Coconut Oil</h5>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn btn-outline-primary">Enquiry</a>
+                <a href="coconut_oil.php" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- product ends-->
+
+  <!-- services -->
+  <section class="py-5 services-section" id="services">
+    <div class="container text-center">
+      <h2 class="mb-4" data-aos="fade-up">Our Services</h2>
+      <p class="mb-5 section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        At <strong>Pal Creation</strong>, we offer reliable, eco-conscious solutions in disposable food packaging and natural wellness products — tailored for both individual and bulk buyers.
+      </p>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card">
+            <i class="bi bi-cup-hot fs-1 icon-purple"></i>
+            <h5 class="mt-3">Custom Paper Cup Printing</h5>
+            <p>Get your logo or branding printed on eco-friendly paper cups — ideal for cafes, events, and promotions.</p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-card">
+            <i class="bi bi-box-seam fs-1 icon-pink"></i>
+            <h5 class="mt-3">Bulk Supply & Distribution</h5>
+            <p>Wholesale distribution of paper cups and cold pressed oils with flexible packaging and logistics support.</p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-card">
+            <i class="bi bi-flower3 fs-1 icon-gold"></i>
+            <h5 class="mt-3">Private Labeling</h5>
+            <p>Offer cold pressed oils under your own brand with our private labeling and packaging services.</p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-card">
+            <i class="bi bi-droplet-half fs-1 icon-indigo"></i>
+            <h5 class="mt-3">Oil Extraction & Purity Testing</h5>
+            <p>Our oils are cold-pressed and batch-tested for purity, ensuring high nutritional and health value.</p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="service-card">
+            <i class="bi bi-shop-window fs-1 icon-coral"></i>
+            <h5 class="mt-3">Product Customization</h5>
+            <p>We cater to both small retailers and large businesses with flexible MOQ options and competitive pricing.</p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="service-card">
+            <i class="bi bi-globe fs-1 icon-sky"></i>
+            <h5 class="mt-3">Pan-India & Export Service</h5>
+            <p>Serving clients across India and abroad with timely delivery, documentation, and export assistance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end services -->
+
+  <!-- FAQ Section -->
+  <div class="container-fluid">
+    <section class="faq-section container py-5" data-aos="fade-up">
+      <div class="faq-header text-center mb-4">
+        <h2>Frequently Asked Questions</h2>
+        <p class="text-muted">Have questions about our products? We’re here to help.</p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+
+        <!-- FAQ 1 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              What types of paper cups do you offer?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We offer eco-friendly paper cups in various sizes, suitable for hot and cold beverages. Our cups are biodegradable and made from sustainable materials.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              What is cold pressed oil and why is it better?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Cold pressed oil is extracted by pressing seeds or nuts without heat, preserving the natural nutrients, flavor, and aroma, making it healthier than refined oils.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Can I customize paper cups with my branding?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes! We provide custom printing services on paper cups for cafes, events, and businesses to help promote your brand sustainably.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="250">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              Do you accept bulk orders and offer wholesale pricing?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we cater to both retail and wholesale customers with competitive pricing for bulk orders. Please <a href="#contact">contact us</a> for more details.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+          <h2 class="accordion-header" id="faqFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+              How should I store cold pressed oils?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Store cold pressed oils in a cool, dark place away from direct sunlight to maintain freshness and extend shelf life.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="350">
+          <h2 class="accordion-header" id="faqSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+              Do you ship internationally?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we ship our products across India and internationally. Shipping charges and delivery times vary based on location.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+          <h2 class="accordion-header" id="faqSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+              Are your paper cups biodegradable?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, our paper cups are made from biodegradable materials that break down naturally, helping reduce environmental impact.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="450">
+          <h2 class="accordion-header" id="faqEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+              Where is Pal Creation located and where are your products made?
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <strong>Pal Creation</strong> is based in India. Our paper cups and cold pressed oils are produced with strict quality standards to ensure sustainability and purity.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <!-- end faq -->
+
+  <!-- contact us  -->
+  <section class="contact-section py-5 bg-light" id="contact">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <h2 class="mb-3" data-aos="fade-up">Contact Us</h2>
+        <p class="text-muted" data-aos="fade-up" data-aos-delay="100">
+          Have a question or business inquiry? Get in touch — we’re here to help!
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center justify-content-center">
+        <!-- Map Column -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="rounded-3 overflow-hidden shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59758.236328837505!2d72.90452962398624!3d20.592558671964547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1st%20Floor%2C%20Shop.%20No.%20118%2C%20Shiv%20Shakti%20Residency%2C%20C-Building%2C%20Gundlav%20Road%2C%20Gundlav%2C%20Valsad%2C%20Valsad%2C%20Gujarat%2C%20396035!5e0!3m2!1sen!2sin!4v1758798819297!5m2!1sen!2sin"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="p-4 p-md-5 bg-white shadow-lg rounded-4">
+            <h4 class="mb-4 text-center">We’d love to hear from you</h4>
+            <form id="contactForm" onsubmit="sendToWhatsApp(); return false;">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
+                  required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-success px-4">
+                  Send via WhatsApp
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+   <?php include('footer.php') ?>
+
+
